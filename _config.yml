@@ -1,0 +1,10 @@
+title: Collabri
+description: Permanent identifiers and schema browser for Collabri.
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+# Skip the LinkML source schema yaml from being served
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock

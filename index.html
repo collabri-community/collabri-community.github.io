@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Collabri — Schema Browser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.55; color: #222; }
+    h1 { font-weight: 600; margin-bottom: 0.25rem; }
+    h2 { margin-top: 2rem; font-weight: 600; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.95em; }
+    .muted { color: #666; font-size: 0.95em; }
+    .card { border: 1px solid #e5e5e5; border-radius: 6px; padding: 1rem 1.25rem; margin: 0.75rem 0; }
+    .card a { font-weight: 600; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+  <h1>Collabri</h1>
+  <p class="muted">Permanent identifier root at <code>https://w3id.org/collabri/</code>.</p>
+
+  <p>This site resolves locally-minted terms in Collabri schemas. Terms whose
+  identity already lives in an external ontology (FIBO, ODRL, FRAPO, PROV,
+  PAV, FaBiO, DCAT, DOAP, IAO, ADMS, schema.org, etc.) resolve at their
+  source; Collabri only mints what isn't already there.</p>
+
+  <h2>Schemas</h2>
+
+  <div class="card">
+    <a href="/sow/">Statement of Work (SOW) Schema</a>
+    <p class="muted">LinkML schema for contract-scoped SOWs: TaskTeam &rarr; Task &rarr;
+    recursive Subtasks &rarr; typed Deliverables, with PROV/PAV versioning and a
+    ChangeProposal / Approval layer (&ldquo;GitHub for contracts&rdquo;). Aligned with
+    FIBO Contracts (primary), ODRL, FRAPO, PROV-O, PAV, and more.</p>
+    <p class="muted">Namespace: <code>https://w3id.org/collabri/sow/</code></p>
+  </div>
+
+  <h2 id="conventions">Identifier conventions</h2>
+  <ul>
+    <li><code>https://w3id.org/collabri/{schema}/{Term}</code> &mdash; locally-minted class, slot, or enum (e.g. <code>collabri/sow/TaskTeam</code>).</li>
+    <li>Each term resolves to its entry in the LinkML-generated schema browser at the same URL.</li>
+    <li>Content negotiation (Turtle, RDF/XML, JSON-LD) will be added when the OWL artifacts are published.</li>
+  </ul>
+
+  <p class="muted">Internal artifacts (controlled-document SOPs, instance data) are
+  out of scope for w3id.org/collabri and live in internal systems.</p>
+</body>
+</html>

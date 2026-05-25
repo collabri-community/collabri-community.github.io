@@ -1,0 +1,5 @@
+# sow 
+
+LinkML schema for representing a Statement of Work as a contracted unit of work, with TaskTeam as the root (scoped to a single contract), Tasks as thematic buckets, recursive Subtasks, Milestones that group subtasks and trigger contractual events (e.g. payment), and typed Deliverables. The schema carries first-class change management: every element is versioned (PROV/PAV), and structural edits flow through ChangeProposals (≈ PRs) composed of element-level Changes, signed via Approvals. Classes and slots carry IRI mappings to FRAPO, PROV-O, PAV, ORG, FOAF, DCAT, DOAP, SPAR/FaBiO, IAO, ADMS, schema.org, and a layered alignment for the contract-flavored classes: FIBO Contracts (primary), ODRL (obligations/duties), Accord Project (smart-clause future), LKIF and LegalRuleML (deontics). Concordant with all via class-level exact/close/related mappings so the LinkML surface stays light while the RDF aligns with multiple ontologies.
+
+URI: https://w3id.org/collabri/sow
