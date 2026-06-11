@@ -27,17 +27,22 @@
   <h2>Schemas</h2>
 
   <div class="card">
-    <a href="/sow/">Statement of Work (SOW) Schema</a>
-    <p class="muted">LinkML schema for contract-scoped SOWs: TaskTeam &rarr; Task &rarr;
-    recursive Subtasks &rarr; typed Deliverables, with PROV/PAV versioning and a
-    ChangeProposal / Approval layer (&ldquo;GitHub for contracts&rdquo;). Aligned with
-    FIBO Contracts (primary), ODRL, FRAPO, PROV-O, PAV, and more.</p>
-    <p class="muted">Namespace: <code>https://w3id.org/collabri/sow/</code></p>
+    <a href="/core/">Collabri Core Schema</a>
+    <p class="muted">Foundational LinkML schema for contract-scoped Statements of Work:
+    TaskTeam &rarr; Task &rarr; recursive Subtask &rarr; typed Deliverable subclasses
+    (Activity, Data, Method, NarrativeDocument, Software, Standard); structured
+    Objective / Metric / AcceptanceCriterion evaluation; datestamped BudgetEntry
+    snapshots covering proposed / awarded / working / actual / encumbrance views;
+    Milestone-gated Payment obligations; and a ChangeProposal / Approval
+    layer (&ldquo;GitHub for contracts&rdquo;). Aligned with FIBO Contracts (primary),
+    ODRL, FRAPO, PROV-O, PAV, and more.</p>
+    <p class="muted">Namespace: <code>https://w3id.org/collabri/core/</code> &mdash;
+    Source: <a href="https://github.com/collabri-community/core">collabri-community/core</a></p>
   </div>
 
   <h2 id="conventions">Identifier conventions</h2>
   <ul>
-    <li><code>https://w3id.org/collabri/{schema}/{Term}</code> &mdash; locally-minted class, slot, or enum (e.g. <code>collabri/sow/TaskTeam</code>).</li>
+    <li><code>https://w3id.org/collabri/{schema}/{Term}</code> &mdash; locally-minted class, slot, or enum (e.g. <code>collabri/core/TaskTeam</code>).</li>
     <li>Each term resolves to its entry in the LinkML-generated schema browser at the same URL.</li>
     <li>Content negotiation (Turtle, RDF/XML, JSON-LD) will be added when the OWL artifacts are published.</li>
   </ul>
